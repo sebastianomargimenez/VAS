@@ -27,7 +27,7 @@
     overflow: visible;
   }
   .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
+    display: flex;
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
@@ -115,97 +115,6 @@
   background-color: #f8f9fa;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
-}
-
-.masthead .masthead-device-mockup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.masthead .masthead-device-mockup .circle {
-  position: absolute;
-  fill: url(#circleGradient);
-  width: 70%;
-  display: none;
-}
-
-.masthead .masthead-device-mockup .circle .gradient-start-color {
-  stop-color: #2937f0;
-}
-
-.masthead .masthead-device-mockup .circle .gradient-end-color {
-  stop-color: #1aa3e2;
-}
-
-.masthead .masthead-device-mockup .shape-1 {
-  position: absolute;
-  height: 1rem;
-  width: 1rem;
-  transform: rotate(-10deg);
-  fill: #2937f0;
-  bottom: 15%;
-  left: 10%;
-}
-
-.masthead .masthead-device-mockup .shape-2 {
-  position: absolute;
-  height: 0.75rem;
-  width: 0.75rem;
-  fill: #2937f0;
-  top: 15%;
-  right: 10%;
-}
-
-.masthead .masthead-device-mockup .device-wrapper {
-  max-width: 10rem;
-}
-
-@media (min-width: 576px) {
-  .masthead .masthead-device-mockup .circle {
-    width: 70%;
-    display: block;
-  }
-  .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 12.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .masthead .masthead-device-mockup .circle {
-    width: 60%;
-  }
-  .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 15rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead .masthead-device-mockup .circle {
-    width: 90%;
-  }
-  .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 15rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .masthead .masthead-device-mockup .circle {
-    width: 75%;
-  }
-  .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 15rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .masthead .masthead-device-mockup .circle {
-    width: 70%;
-  }
-  .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 17rem;
-  }
 }
 
 .device-wrapper {
@@ -460,6 +369,59 @@
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
+}
+
+.contenedor {
+  margin-top: 150px;
+  padding: 10px, 10px, 10px, 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 40px 1px;
+  grid-auto-flow: row;
+  grid-template-areas: "uno uno uno" "dos dos dos" "tres tres tres";
+  width: 90%;
+  height: 100%;
+}
+
+.contenedor .uno {
+  grid-area: uno;
+  display: inline-block;
+  text-align: start;
+  margin-left: 10%;
+}
+
+.contenedor .uno img {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+.contenedor .dos {
+  grid-area: dos;
+  display: inline-block;
+  text-align: start;
+  margin-left: 10%;
+}
+
+.contenedor .dos img {
+  width: 200px;
+  float: right;
+  margin-right: 10px;
+}
+
+.contenedor .tres {
+  grid-area: tres;
+  display: inline-block;
+  text-align: start;
+  margin-left: 10%;
+}
+
+.contenedor .tres img {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
 }
 
 /*!
@@ -10798,4 +10760,47 @@ footer a:hover, footer a:active, footer a:focus {
 
 .bg-black {
   background-color: black;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . proceso vasimg vasimg . ." "queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos queHacemos" "comoLoHacemos comoLoHacemos comoLoHacemos comoLoHacemos comoLoHacemos comoLoHacemos comoLoHacemos comoLoHacemos" "quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos quienesSomos";
+  width: 80%;
+  height: 100%;
+}
+
+.queHacemos {
+  grid-area: queHacemos;
+  float: none;
+}
+
+.queHacemos img {
+  width: 200px;
+  float: start;
+}
+
+.comoLoHacemos {
+  grid-area: comoLoHacemos;
+}
+
+.comoLoHacemos img {
+  width: 200px;
+  float: right;
+}
+
+.quienesSomos {
+  grid-area: quienesSomos;
+}
+
+.proceso {
+  grid-area: proceso;
+}
+
+.vasimg {
+  grid-area: vasimg;
 }
