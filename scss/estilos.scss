@@ -75,15 +75,16 @@ footer a:hover, footer a:active, footer a:focus {
     width: 80%;
     height: auto;
     background-color: white;
-    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: start;
 }   
 
 @mixin imganexo  {
     width: 300px;
     margin-top: 150px;
     margin-bottom: 150px;
+    text-align: center;
 }
 
 .contenedorSeo{
@@ -93,6 +94,3 @@ footer a:hover, footer a:active, footer a:focus {
     }
 }
 
-#fotoseo{
-    border-radius: 100px;
-}
