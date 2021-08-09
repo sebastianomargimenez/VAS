@@ -20,14 +20,13 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a class="navbar-brand fw-bold" href="index.html"><img src="assets/img/vas 500 X 500.png" alt="" width="100px"></a>
+            <a class="navbar-brand fw-bold" href="index.html"><img src="media/imagenes/vas 500 X 500.png" alt="" width="100px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="marketingdigital.html">Marketing digital</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="seo.html">Seo</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="sem.html">Sem</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="redessoc.html">Redes sociales</a></li>
@@ -43,30 +42,87 @@
             </div>
         </div>
     </nav>
-    <div class="clearfix"></div>
-    <div class="row">
-        <div class="col-12 text-center">
-            <img src="assets/img/manito.png" alt="" width="400" class="imgMarketing img-fluid">
-        </div>
-    </div>
-    <div class="row justify-content-md-center text-center textoMkt">
-        <div class="col-10">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi quo atque rem error alias cum ipsam ut provident cumque sequi soluta inventore, molestias magnam exercitationem fugit sit ea dolorum labore, deserunt voluptatem ab eos architecto doloribus! Reiciendis ex rem magnam eaque iusto alias nostrum soluta facilis unde esse aspernatur, nemo maiores! Laboriosam possimus vel dignissimos amet at, error accusantium! Deserunt laborum ipsam recusandae eligendi in natus harum eius voluptates. Tempore officiis ad quae inventore! Facilis dolores eius, assumenda exercitationem est non adipisci laudantium laborum, officiis quisquam blanditiis dolore tempora asperiores ea sed officia. Nihil id quam sint sapiente quaerat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi quo atque rem error alias cum ipsam ut provident cumque sequi soluta inventore, molestias magnam exercitationem fugit sit ea dolorum labore, deserunt voluptatem ab eos architecto doloribus! Reiciendis ex rem magnam eaque iusto alias nostrum soluta facilis unde esse aspernatur, nemo maiores! Laboriosam possimus vel dignissimos amet at, error accusantium! Deserunt laborum ipsam recusandae eligendi in natus harum eius voluptates. Tempore officiis ad quae inventore! Facilis dolores eius, assumenda exercitationem est non adipisci laudantium laborum, officiis quisquam blanditiis dolore tempora asperiores ea sed officia. Nihil id quam sint sapiente quaerat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi quo atque rem error alias cum ipsam ut provident cumque sequi soluta inventore, molestias magnam exercitationem fugit sit ea dolorum labore, deserunt voluptatem ab eos architecto doloribus! Reiciendis ex rem magnam eaque iusto alias nostrum soluta facilis unde esse aspernatur, nemo maiores! Laboriosam possimus vel dignissimos amet at, error accusantium! Deserunt laborum ipsam recusandae eligendi in natus harum eius voluptates. Tempore officiis ad quae inventore! Facilis dolores eius, assumenda exercitationem est non adipisci laudantium laborum, officiis quisquam blanditiis dolore tempora asperiores ea sed officia. Nihil id quam sint sapiente quaerat!</p>
-        </div>
-    </div>
+        <!--contenido  -->
+        <section class="contenedorSeo">
+            <img src="media/imagenes/ec.png" alt="imagen e-commerce">
+            <div>
+                <p>Definitivamente, vender por mercado libre u otros Marketplaces masivos como Amazon o ebay no se trata sólo de subir el producto con un par de imágenes. no desperdicie este fantástico canal de ventas que por sí solo podría constituirse en su principal punto de ventas, inclusive más que su propio local a la calle. Sabemos cómo lograr la máxima efectividad, aún con las altas comisiones que estos portales suelen tener. Deje que VAS Marketing se encarga del manejo de su e-shop, y usted solo dedíquese a despachar.</p>
+            </div>
+        </section>
     <footer class="bg-black text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
                 <div class="mb-2">&copy; VAS marketing digital 2021. Todos los derechos reservados.</div>
-                <a href="#!">Privacy</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#!">Terms</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#!">FAQ</a>
             </div>
         </div>
     </footer>
+<!-- Feedback Modal-->
+            <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                            <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Contacto!</h5>
+                            <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body border-0 p-4">
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <label for="name">Nombre completo</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">Nombre completo requerido.</div>
+                                </div>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <label for="email">Email</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">Email requerido.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido.</div>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="" />
+                                    <label for="phone">Numero de telefono</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Telefeno Requerido</div>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                    <label for="message">Mensaje</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">Escriba su motivo de contacto.</div>
+                                </div>
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">todo listo!</div>
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error enviando mensaje!</div></div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
